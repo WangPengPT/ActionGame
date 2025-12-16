@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "zero",
+      "file": "test.js",
+      "age": 12,
+      "student": false,
+      "height": 172
+    },
+    {
+      "id": 2,
+      "name": "zero2",
+      "file": "test.js",
+      "age": 12,
+      "student": true,
+      "height": 172.3
+    }
+  ]
+}

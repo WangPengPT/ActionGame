@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Name": "zero",
+      "File": "test.js",
+      "Age": 12,
+      "Student": false,
+      "Height": 172.0
+    },
+    {
+      "Id": 2,
+      "Name": "zero2",
+      "File": "test.js",
+      "Age": 12,
+      "Student": true,
+      "Height": 172.3
+    }
+  ]
+}
