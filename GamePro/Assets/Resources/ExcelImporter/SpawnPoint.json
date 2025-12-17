@@ -1,0 +1,81 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Monsterid": 1,
+      "Posx": 20,
+      "Posy": 0,
+      "Posz": 20,
+      "Respawntime": 30,
+      "Maxcount": 3,
+      "Patrolradius": 10,
+      "Description": "东部僵尸刷新点"
+    },
+    {
+      "Id": 2,
+      "Monsterid": 1,
+      "Posx": -20,
+      "Posy": 0,
+      "Posz": 20,
+      "Respawntime": 30,
+      "Maxcount": 3,
+      "Patrolradius": 10,
+      "Description": "西部僵尸刷新点"
+    },
+    {
+      "Id": 3,
+      "Monsterid": 2,
+      "Posx": 15,
+      "Posy": 0,
+      "Posz": -15,
+      "Respawntime": 25,
+      "Maxcount": 2,
+      "Patrolradius": 15,
+      "Description": "疯狗刷新点"
+    },
+    {
+      "Id": 4,
+      "Monsterid": 3,
+      "Posx": 0,
+      "Posy": 0,
+      "Posz": 30,
+      "Respawntime": 45,
+      "Maxcount": 2,
+      "Patrolradius": 8,
+      "Description": "匪徒刷新点"
+    },
+    {
+      "Id": 5,
+      "Monsterid": 101,
+      "Posx": 30,
+      "Posy": 0,
+      "Posz": 0,
+      "Respawntime": 120,
+      "Maxcount": 1,
+      "Patrolradius": 12,
+      "Description": "精英僵尸刷新点"
+    },
+    {
+      "Id": 6,
+      "Monsterid": 102,
+      "Posx": -30,
+      "Posy": 0,
+      "Posz": 0,
+      "Respawntime": 120,
+      "Maxcount": 1,
+      "Patrolradius": 20,
+      "Description": "狂暴犬刷新点"
+    },
+    {
+      "Id": 7,
+      "Monsterid": 201,
+      "Posx": 0,
+      "Posy": 0,
+      "Posz": 50,
+      "Respawntime": 600,
+      "Maxcount": 1,
+      "Patrolradius": 0,
+      "Description": "Boss刷新点"
+    }
+  ]
+}

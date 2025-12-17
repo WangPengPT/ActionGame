@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Itemid": 1001,
+      "Effecttype": 0,
+      "Effectvalue": 30.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 1.0,
+      "Description": "立即恢复30点生命值"
+    },
+    {
+      "Id": 2,
+      "Itemid": 1002,
+      "Effecttype": 0,
+      "Effectvalue": 100.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 1.5,
+      "Description": "立即恢复100点生命值"
+    },
+    {
+      "Id": 3,
+      "Itemid": 1003,
+      "Effecttype": 1,
+      "Effectvalue": 0.5,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 3.0,
+      "Description": "立即恢复50%最大生命值"
+    },
+    {
+      "Id": 4,
+      "Itemid": 1004,
+      "Effecttype": 3,
+      "Effectvalue": 0.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 2.0,
+      "Description": "清除所有负面状态"
+    },
+    {
+      "Id": 5,
+      "Itemid": 1005,
+      "Effecttype": 2,
+      "Effectvalue": 0.3,
+      "Duration": 10,
+      "Bufftype": 5,
+      "Cooldown": 30.0,
+      "Description": "提升30%移动速度，持续10秒"
+    },
+    {
+      "Id": 6,
+      "Itemid": 1006,
+      "Effecttype": 2,
+      "Effectvalue": 50.0,
+      "Duration": 15,
+      "Bufftype": 6,
+      "Cooldown": 45.0,
+      "Description": "获得50点护盾，持续15秒"
+    },
+    {
+      "Id": 101,
+      "Itemid": 1101,
+      "Effecttype": 4,
+      "Effectvalue": 30.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 0.0,
+      "Description": "补充30发手枪弹药"
+    },
+    {
+      "Id": 102,
+      "Itemid": 1102,
+      "Effecttype": 4,
+      "Effectvalue": 60.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 0.0,
+      "Description": "补充60发步枪弹药"
+    },
+    {
+      "Id": 103,
+      "Itemid": 1103,
+      "Effecttype": 4,
+      "Effectvalue": 16.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 0.0,
+      "Description": "补充16发霰弹"
+    },
+    {
+      "Id": 104,
+      "Itemid": 1104,
+      "Effecttype": 4,
+      "Effectvalue": 10.0,
+      "Duration": 0,
+      "Bufftype": 0,
+      "Cooldown": 0.0,
+      "Description": "补充10发狙击弹"
+    }
+  ]
+}

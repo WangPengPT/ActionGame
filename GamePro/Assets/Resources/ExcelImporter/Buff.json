@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Name": "冰冻",
+      "Bufftype": 1,
+      "Defaultvalue": 0.3,
+      "Defaultduration": 3,
+      "Maxstack": 5,
+      "Iconpath": "Icons/Buff/Freeze",
+      "Effectpath": "Effects/Freeze",
+      "Description": "减速30%每层,可叠加5层"
+    },
+    {
+      "Id": 2,
+      "Name": "中毒",
+      "Bufftype": 2,
+      "Defaultvalue": 5.0,
+      "Defaultduration": 5,
+      "Maxstack": 5,
+      "Iconpath": "Icons/Buff/Poison",
+      "Effectpath": "Effects/Poison",
+      "Description": "每秒5点伤害每层,可叠加5层"
+    },
+    {
+      "Id": 3,
+      "Name": "燃烧",
+      "Bufftype": 3,
+      "Defaultvalue": 8.0,
+      "Defaultduration": 4,
+      "Maxstack": 3,
+      "Iconpath": "Icons/Buff/Burn",
+      "Effectpath": "Effects/Burn",
+      "Description": "每秒8点伤害,增加受到的伤害"
+    },
+    {
+      "Id": 4,
+      "Name": "眩晕",
+      "Bufftype": 4,
+      "Defaultvalue": 0.0,
+      "Defaultduration": 1,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/Stun",
+      "Effectpath": "Effects/Stun",
+      "Description": "无法行动"
+    },
+    {
+      "Id": 5,
+      "Name": "加速",
+      "Bufftype": 5,
+      "Defaultvalue": 0.3,
+      "Defaultduration": 10,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/Speed",
+      "Effectpath": "Effects/Speed",
+      "Description": "移动速度+30%"
+    },
+    {
+      "Id": 6,
+      "Name": "护盾",
+      "Bufftype": 6,
+      "Defaultvalue": 50.0,
+      "Defaultduration": 15,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/Shield",
+      "Effectpath": "Effects/Shield",
+      "Description": "吸收50点伤害"
+    },
+    {
+      "Id": 7,
+      "Name": "治疗",
+      "Bufftype": 7,
+      "Defaultvalue": 5.0,
+      "Defaultduration": 10,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/Heal",
+      "Effectpath": "Effects/Heal",
+      "Description": "每秒恢复5点生命"
+    },
+    {
+      "Id": 8,
+      "Name": "攻击强化",
+      "Bufftype": 8,
+      "Defaultvalue": 0.2,
+      "Defaultduration": 15,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/AttackUp",
+      "Effectpath": "Effects/AttackUp",
+      "Description": "攻击力+20%"
+    },
+    {
+      "Id": 9,
+      "Name": "防御强化",
+      "Bufftype": 9,
+      "Defaultvalue": 0.2,
+      "Defaultduration": 15,
+      "Maxstack": 1,
+      "Iconpath": "Icons/Buff/DefenseUp",
+      "Effectpath": "Effects/DefenseUp",
+      "Description": "防御力+20%"
+    }
+  ]
+}

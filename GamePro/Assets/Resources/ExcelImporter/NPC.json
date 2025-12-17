@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Actorid": 501,
+      "Npctype": 1,
+      "Dialogues": "欢迎光临!|需要点什么?|祝你好运!",
+      "Shopitemids": "2001,2002,2003,1001,1002",
+      "Questids": "",
+      "Interactionrange": 3,
+      "Isstationary": true
+    },
+    {
+      "Id": 2,
+      "Actorid": 502,
+      "Npctype": 2,
+      "Dialogues": "英雄,我需要你的帮助!|请帮我消灭那些怪物!",
+      "Shopitemids": "",
+      "Questids": "1,2,3",
+      "Interactionrange": 3,
+      "Isstationary": true
+    },
+    {
+      "Id": 3,
+      "Actorid": 503,
+      "Npctype": 4,
+      "Dialogues": "要强化装备吗?|好材料才能打造好武器!",
+      "Shopitemids": "",
+      "Questids": "",
+      "Interactionrange": 3,
+      "Isstationary": true
+    },
+    {
+      "Id": 4,
+      "Actorid": 504,
+      "Npctype": 0,
+      "Dialogues": "需要治疗吗?|保重身体!",
+      "Shopitemids": "",
+      "Questids": "",
+      "Interactionrange": 3,
+      "Isstationary": false
+    }
+  ]
+}

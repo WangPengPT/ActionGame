@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "Id": 1,
+      "Name": "清理僵尸",
+      "Npcid": 2,
+      "Type": 0,
+      "Targettype": 0,
+      "Targetid": 101,
+      "Targetcount": 10,
+      "Rewardexp": 100,
+      "Rewardgold": 50,
+      "Rewarditemids": "1001,1101",
+      "Rewarditemcounts": "3,30",
+      "Prequestid": 0,
+      "Description": "消灭10只变异僵尸"
+    },
+    {
+      "Id": 2,
+      "Name": "收集零件",
+      "Npcid": 2,
+      "Type": 1,
+      "Targettype": 0,
+      "Targetid": 1201,
+      "Targetcount": 5,
+      "Rewardexp": 80,
+      "Rewardgold": 30,
+      "Rewarditemids": "1201",
+      "Rewarditemcounts": "2",
+      "Prequestid": 0,
+      "Description": "收集5个破损零件"
+    },
+    {
+      "Id": 3,
+      "Name": "精英猎杀",
+      "Npcid": 2,
+      "Type": 0,
+      "Targettype": 0,
+      "Targetid": 201,
+      "Targetcount": 3,
+      "Rewardexp": 300,
+      "Rewardgold": 150,
+      "Rewarditemids": "2001,1002",
+      "Rewarditemcounts": "1,2",
+      "Prequestid": 1,
+      "Description": "消灭3只精英僵尸"
+    },
+    {
+      "Id": 4,
+      "Name": "与铁匠对话",
+      "Npcid": 2,
+      "Type": 2,
+      "Targettype": 0,
+      "Targetid": 503,
+      "Targetcount": 1,
+      "Rewardexp": 50,
+      "Rewardgold": 20,
+      "Rewarditemids": "",
+      "Rewarditemcounts": "",
+      "Prequestid": 2,
+      "Description": "与铁匠张交谈"
+    },
+    {
+      "Id": 5,
+      "Name": "Boss讨伐",
+      "Npcid": 2,
+      "Type": 0,
+      "Targettype": 0,
+      "Targetid": 301,
+      "Targetcount": 1,
+      "Rewardexp": 1000,
+      "Rewardgold": 500,
+      "Rewarditemids": "3001,1003",
+      "Rewarditemcounts": "1,5",
+      "Prequestid": 3,
+      "Description": "击败尸潮之王"
+    }
+  ]
+}
