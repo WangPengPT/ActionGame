@@ -628,6 +628,58 @@ namespace GamePlay.Manager
         }
         
         /// <summary>
+        /// 清理当前场景中的Actor和SceneElement
+        /// </summary>
+        /// <param name="clearPlayer">是否清理玩家角色</param>
+        private void CleanupScene(bool clearPlayer)
+        {
+            if (clearPlayer)
+            {
+                ActorManager.Instance.ClearAll(); // 清理所有Actor（包括玩家）
+            }
+            else
+            {
+                ActorManager.Instance.ClearAllExceptPlayer(); // 只清理NPC等，保留玩家
+            }
+            SceneElementManager.Instance.ClearAll();
+            _lobbyNPCsList.Clear(); // 清理大厅NPC列表
+            _levelButtons.Clear(); // 清理关卡按钮列表
+            Debug.Log($"[GameManager] 场景清理完成. 清理玩家: {clearPlayer}");
+        }
+        
+        /// <summary>
+        /// 创建玩家角色或移动现有玩家
+        /// </summary>
+        /// <param name="spawnPosition">玩家出生位置</param>
+        private void CreateOrMovePlayer(Vector3 spawnPosition)
+        {
+            var actorManager = ActorManager.Instance;
+            if (actorManager == null)
+            {
+                Debug.LogError("[GameManager] ActorManager 未初始化");
+                return;
+            }
+
+            var existingPlayer = actorManager.PlayerCharacter;
+            if (existingPlayer != null)
+            {
+                Debug.Log("[GameManager] 玩家已存在，移动到指定位置");
+                existingPlayer.transform.position = spawnPosition;
+                // TODO: 可能需要重置玩家状态，例如血量、武器等
+            }
+            else
+            {
+                // 创建新玩家
+                var gameMode = Network.GameModeManager.Instance;
+                string playerName = gameMode != null ? gameMode.PlayerName : "Player";
+                int configId = gameMode != null ? gameMode.PlayerConfigId : _playerConfigId;
+
+                actorManager.CreatePlayer(configId, spawnPosition, playerName);
+                Debug.Log($"[GameManager] 创建玩家: {playerName} 位置: {spawnPosition}");
+            }
+        }
+        
+        /// <summary>
         /// 返回主菜单
         /// </summary>
         public void ReturnToMainMenu()
@@ -899,7 +951,7 @@ namespace GamePlay.Manager
         {
             if (npc == null || _currentState != GameState.Lobby) return;
             
-            Debug.Log($"[GameManager] 与NPC交互: {npc.Name} ({npc.NPCType})");
+            Debug.Log($"[GameManager] 与NPC交互: {npc.ActorName} ({npc.NPCType})");
             
             if (npc.NPCType == NPCType.QuestGiver && _levelSelectPanel != null)
             {
