@@ -649,26 +649,28 @@ namespace Network
         
         /// <summary>
         /// 初始化游戏（创建玩家等）
+        /// 委托给 GameManager 统一处理游戏逻辑启动
+        /// 
+        /// 注意：这个方法主要用于旧的直接启动流程（不通过大厅）
+        /// 新的流程通过 SceneManager 加载关卡，SceneManager 会调用 GameManager.StartGame()
         /// </summary>
         private void InitializeGame()
         {
-            // 清理
-            ActorManager.Instance.ClearAll();
-            SceneElementManager.Instance.ClearAll();
+            // 检查当前场景类型
+            var currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             
-            // 创建本地玩家
-            Vector3 spawnPos = Vector3.zero;
-            var player = ActorManager.Instance.CreatePlayer(_playerConfigId, spawnPos, _playerName);
-            
-            // 单机模式下，加载刷怪点
-            if (IsOffline)
+            // 如果当前不在游戏关卡场景，说明可能是通过 SceneManager 加载的
+            // SceneManager 会负责初始化，这里跳过
+            if (currentSceneName != "Main" && !currentSceneName.Contains("Level") && !currentSceneName.Contains("Game"))
             {
-                var spawnConfigs = ConfigHelper.GetAllSpawnPointConfigs();
-                foreach (var config in spawnConfigs)
-                {
-                    SceneElementManager.Instance.AddSpawnPoint(config);
-                }
+                Debug.Log($"[GameMode] 当前场景不是游戏关卡 ({currentSceneName})，跳过 InitializeGame");
+                return;
             }
+            
+            // 调用 GameManager 的 StartGame，传入当前模式的配置
+            // GameManager 会负责：清理、创建玩家、加载刷怪点、生成NPC、生成测试物品等
+            Vector3 spawnPos = Vector3.zero;
+            GamePlay.Manager.GameManager.Instance.StartGame(_playerConfigId, _playerName, spawnPos);
             
             Debug.Log($"[GameMode] 游戏初始化完成，玩家: {_playerName}");
         }
